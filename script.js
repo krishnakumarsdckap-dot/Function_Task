@@ -260,4 +260,23 @@
 
 
 
-//------------- Mini task3 and 4 are done in HTML page using internal JS--------------\\
+//------------- Mini task3 is done in HTML page using internal JS--------------\\
+
+
+// {{{[[[[[[[[[[[[[[{----MINI PROJECT -4---}]]]]]]]]]]]]]]}}}
+
+//Done by Myself
+
+// let value = parseInt(prompt("Enter the Value : "))
+// let scale= prompt("Enter the Scale : ")
+// function convertTemperature(value,scale){
+//     if (scale=="C"||scale=="c"){
+//         let Fahrenheit=(value * 9/5) + 32
+//         return `${value}° Celsius = ${Fahrenheit}° Fahrenheit`
+//     }
+//     else if(scale=="F"||scale=="f"){
+//         let Celsius = (value - 32) * 5/9
+//         return `${value}° Fahrenheit = ${Celsius}° Celsius`
+//     }
+// }
+// console.log(convertTemperature(value,scale))
