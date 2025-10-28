@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Using Chat GPT -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Quote Generator</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      background: #f7f9fc;
+      padding-top: 100px;
+    }
+    #quote-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      width: 50%;
+      margin: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-size: 1.2rem;
+      color: #333;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="quote-box">Click the button to get inspired 💡</div>
+  <button id="new-quote">Next Quote</button>
+
+  <script>
+    const quotes = [
+      "Believe in yourself and code confidently!",
+      "Success starts with consistency.",
+      "Every error is a step closer to mastery.",
+      "Don’t watch the clock; do what it does — keep going.",
+      "Dream big, code bigger.",
+      "Your only limit is your imagination.",
+      "Keep learning, keep building.",
+      "Focus on progress, not perfection.",
+      "Stay curious, stay creative.",
+      "Great things take time — and good code takes debugging!"
+    ];
+
+    const getRandomQuote = () => {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      return quotes[randomIndex];
+    };
+
+    const quoteBox = document.getElementById("quote-box");
+    const btn = document.getElementById("new-quote");
+
+    btn.addEventListener("click", () => {
+      const quote = getRandomQuote();
+      quoteBox.innerHTML = quote;
+      console.log(quote);
+    });
+  </script>
+</body>
+</html>
