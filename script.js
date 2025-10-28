@@ -259,4 +259,5 @@
 
 
 
-// Mini task3 and 4 are done in HTML page using internal JS
+
+//------------- Mini task3 and 4 are done in HTML page using internal JS--------------\\
