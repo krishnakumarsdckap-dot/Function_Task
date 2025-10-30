@@ -69,7 +69,7 @@
 // 5. Count Words in a Sentence
 // Write a function countWords(sentence) that returns how many words are in a sentence.
 
-// let Sentence = prompt("Enter The Sentence")
+// let Sentence = prompt("Enter The Sentence : ")
 // function countWords(Sentence){
 //     let words = Sentence.split(" ")
 //     return words.length;
@@ -139,21 +139,22 @@
 // Write a function isPrime(num) that returns true if the number is prime, otherwise false.
 
 
-// let num = parseInt(prompt("Enter a Number"))
-// function isPrime(num) {
-
-//     if(num==2||num==3||num==5||num ==7){
-//         return `True ${num} is a prime number` ;
-//     }
-//     else if(num%2==0||num%3==0||num%5==0||num%7==0){
-//         return `False ${num} is not a prime number`
-//     }
-//     else{
-//         return `True ${num} is a prime number`
-//     }
-
-// }
-// console.log(isPrime(num))
+let num = parseInt(prompt("Enter a Number : "))
+function isPrime(num) {
+    if(num==1||num==0){
+        return `False ${num} is not a prime number`
+    }
+    for (i=2 ;i<num ; i++){
+        if(num==2||num==3||num==5||num==7){
+            return `True ${num} is a prime number`;
+        }
+        else if(num%i==0){
+            return `False ${num} is not a prime number`
+        }
+    }
+    return `True ${num} is a prime number`;
+}
+console.log(isPrime(num))
 
 //Done by Myself
 
